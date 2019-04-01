@@ -14,7 +14,7 @@ You may need to reset the proxy first:
 git config --global --unset http.proxy
 ```
 
-### Things we will cover:
+### Things we will cover
 
 * Python
   * Data structures
@@ -25,24 +25,14 @@ git config --global --unset http.proxy
   * Modules
   * Standard library
   * Useful libraries
-    * numpy
-    * pandas
-    * sklearn
-    * requests
-    * bs4
-    * matplotlib
+    * numpy, pandas, sklearn, requests, bs4, matplotlib etc.
   * Packages
     * virtual environments
-  * API’s
-    * Flask
-    * Deployment
-      * local
-      * ngrok
-      * cloud (serverless)
-  * Spark
-  * Editors
-    * Sublime
-    * PyCharm
+* Spark
+* Editors
+  * Sublime
+  * PyCharm
+* Markdown
 * Command line
   * bash
     * ls, cp, mv, cd, scp, rsyc, ssh, find, grep, crontab etc.
@@ -53,4 +43,15 @@ git config --global --unset http.proxy
   * Using GitHub/GitLab
 * SQL
 * Docker/Kubernetes
+* Best practices
+  * DevOps
+    * CI/CD
+  * Unit testing
+  * Code quality
+* API’s
+  * Flask
+  * Deployment
+    * local
+    * ngrok
+    * cloud (serverless)
 * ...
