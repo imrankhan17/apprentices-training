@@ -1,15 +1,24 @@
 ## Apprentices training
 
-#### Getting started
+### Getting started
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/imrankhan17/apprentices-training/master)
 
+To work with the project on your local computer, clone the repo:
+```bash
+git clone https://github.com/imrankhan17/apprentices-training.git
+```
 
-#### Things we will cover:
+You may need to reset the proxy first:
+```bash
+git config --global --unset http.proxy
+```
+
+### Things we will cover:
 
 * Python
-  * Basics
-    * Data structures
-      * Time complexity (https://apirobot.me/posts/lets-talk-about-data-structures-in-python)
+  * Data structures
+      * Time complexity
   * Control flow
   * Functions
   * Classes
