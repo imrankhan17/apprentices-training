@@ -2,17 +2,35 @@
 
 ### Getting started
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/imrankhan17/apprentices-training/master)
+Click here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/imrankhan17/apprentices-training/master) if you don't want to install anything on your computer.
 
-To work with the project on your local computer, clone the repo:
+To work with the project on your computer, clone the repo:
 ```bash
 git clone https://github.com/imrankhan17/apprentices-training.git
+cd apprentices-training
 ```
 
 You may need to reset the proxy first:
 ```bash
 git config --global --unset http.proxy
 ```
+
+If you have Python 3 and Jupyter installed on your computer, simply run `jupyter notebook` within the project directory.
+
+Otherwise, you can use Docker:
+```bash
+docker run -p 8888:8888 -v $(pwd):/home imrankhan17/jupyter-base
+```
+
+You will need to configure the proxy to allow you to pull images over the corporate network:
+* Docker whale icon
+* Preferences
+* Proxies
+* Manual proxy configuration
+* Enter `http://vfukukproxy.internal.vodafone.com:8080` under HTTP and HTTPS
+* Apply & Restart
+
+Install Docker from [here](https://download.docker.com/mac/stable/Docker.dmg).
 
 ### Things we will cover
 
@@ -28,7 +46,9 @@ git config --global --unset http.proxy
     * numpy, pandas, sklearn, requests, bs4, matplotlib etc.
   * Packages
     * virtual environments
-* Spark
+* Distributed computing
+  * MapReduce
+  * Spark
 * Editors
   * Sublime
   * PyCharm

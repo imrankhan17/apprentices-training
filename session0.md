@@ -24,3 +24,11 @@
 * Long-running project that covers all aspects of a software engineering pipeline.
   * https://github.com/imrankhan17/pyzoopla
   * https://github.com/imrankhan17/deep-learning-api
+
+#### Getting help
+
+* You can ask me
+* You can ask each other
+* Google
+* Stack Overflow
+* Trial and error
