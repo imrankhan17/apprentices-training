@@ -36,7 +36,6 @@ Install Docker from [here](https://download.docker.com/mac/stable/Docker.dmg).
 
 * Python
   * Data structures
-      * Time complexity
   * Control flow
   * Functions
   * Classes

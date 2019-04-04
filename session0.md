@@ -23,12 +23,13 @@
 * The content is purely an accumulation of my own (limited) experience and what I consider to be the most appropriate.
 * Long-running project that covers all aspects of a software engineering pipeline.
   * https://github.com/imrankhan17/pyzoopla
-  * https://github.com/imrankhan17/deep-learning-api
+  * https://cy30l4lai7.execute-api.eu-west-2.amazonaws.com/api
 
 #### Getting help
 
 * You can ask me
 * You can ask each other
+* Official docs
 * Google
 * Stack Overflow
 * Trial and error
