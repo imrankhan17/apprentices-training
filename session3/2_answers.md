@@ -4,36 +4,63 @@
 
 1. How many rows have a non-null value for `end_station` in the `journeys` table?
 ```sql
+select count(end_station)
+from journeys;
 ```
 
 2. How many null values are there in the `note` column?
 ```sql
+select count(*) - count(note)
+from journeys;
 ```
 
 3. What's the average tube journey fare?  What's the highest and lowest?
 ```sql
+select avg(charge), min(charge), max(charge)
+from journeys;
 ```
 
 4. What happens if we apply `max` or `min` on the tube station names?  What about the times?
 ```sql
+# max/min on string columns considers alphabetical ordering
+# max/min on datetime columns looks at most recent/latest tiemstamps
+select max(start_station), min(start_station), max(start_time), min(start_time)
+from journeys;
 ```
 
 ### Exercise 2
 
 1. Order the journeys by `balance` highest to lowest.
 ```sql
+select *
+from journeys
+order by  balance desc;
 ```
 
 2. How many times have I travelled from Earls Court to Temple?  What was the average fare?
 ```sql
+select count(*), avg(charge)
+from journeys
+where start_station = 'Earls Court'
+and end_station = 'Temple';
 ```
 
 3. How many unique journeys have I taken?
 ```sql
+select start_station, end_station, count(*)
+from journeys
+group by start_station, end_station;
 ```
 
 4. What can you say about the journeys where the end station is missing?  What about when balance is missing?
 ```sql
+select *
+from journeys
+where end_station is null;
+
+select *
+from journeys
+where balance is null;
 ```
 
 ### Exercise 3
