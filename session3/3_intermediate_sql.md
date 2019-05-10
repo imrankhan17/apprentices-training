@@ -91,7 +91,7 @@ group by if(charge < 1.5, 'cheap', 'expensive');
 
 ### Joins
 
-To combine and analyse date stored in different tables we use joins.  Joins rely on a key - this is a common column appearing in both tables.  We use the `join` key and aliases for the tables:
+To combine and analyse data stored in different tables we use joins.  Joins rely on a key - this is a common column appearing in both tables.  We use the `join` key and aliases for the tables:
 ```sql
 select *
 from stations;

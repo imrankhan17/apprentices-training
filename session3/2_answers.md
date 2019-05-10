@@ -67,32 +67,65 @@ where balance is null;
 
 1. What were the shortest and longest journeys I took?
 ```sql
+select start_time, end_time, start_station, end_station, timestampdiff(minute, start_time, end_time)
+from journeys
+order by timestampdiff(minute, start_time, end_time) desc;
 ```
 
 2. What was the average journey time to go from Earls Court to Temple?
 ```sql
+select avg(timestampdiff(minute, start_time, end_time))
+from journeys
+where start_station = 'Earls Court'
+and end_station = 'Temple';
 ```
 
 3. Which day of the week have I used the tube the most?
 ```sql
+select dayname(start_time), count(*)
+from journeys
+group by dayname(start_time)
+order by count(*) desc;
 ```
 
 4. Which hour of the day have I used the tube the most?
 ```sql
+select hour(start_time), count(*)
+from journeys
+group by hour(start_time)
+order by count(*) asc;
 ```
 
 5. On which single day did I have the most journeys?
 ```sql
+select date(start_time), count(*)
+from journeys
+group by date(start_time)
+order by count(*) desc;
 ```
 
 6. How many journeys have I taken which started before 8AM?  After 11PM?
 ```sql
+select count(*)
+from journeys
+where hour(start_time) < 8;
+
+select count(*)
+from journeys
+where hour(start_time) >= 23;
 ```
 
 7. Which journey was the most expensive in terms of charge per minute?
 ```sql
+select start_time, end_time, start_station, end_station, charge, charge / timestampdiff(minute, start_time, end_time)
+from journeys
+order by charge / timestampdiff(minute, start_time, end_time) desc;
 ```
 
 8. From which single station have I visited the most number of unique stations?
 ```sql
+select start_station, count(distinct end_station)
+from journeys
+group by start_station
+order by count(distinct end_station) desc;
 ```
