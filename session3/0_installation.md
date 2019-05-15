@@ -19,7 +19,7 @@ You will need to install the _DataGrip_ IDE to run SQL queries on the database. 
 	Password: {I will have sent you the password}  
 	Database: `personal`  
 
-7. Click on `Test Connection`.  You should see a green tick if everything has worked:  
+7. Click on `Test Connection`.  Note, you should be on the guest wifi for it to work.  You should see a green tick if everything has worked:  
 ![](images/datagrip_settings.png)
 
 8. Click `OK` then on the left you should see the database tables after clicking on the down arrows.

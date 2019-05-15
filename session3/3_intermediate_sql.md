@@ -123,3 +123,6 @@ group by zone;
 1. How many journeys have I ended in zone 4?
 2. How many journeys have I started in zone 1 (including stations in multiple zones)?
 3. What's the northern/southern/eastern/western most stations I've started a journey from?
+
+**Answers for all exercises are [here](4_answers.md).**
+

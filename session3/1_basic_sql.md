@@ -242,6 +242,8 @@ from journeys;
 7. Which journey was the most expensive in terms of charge per minute?
 8. From which single station have I visited the most number of unique stations?
 
+**Answers for all exercises are [here](2_answers.md).**
+
 **Next week:**
 * Column aliases with `as`
 * Advanced filtering with `like` and `between`
