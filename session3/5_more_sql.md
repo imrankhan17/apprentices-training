@@ -223,7 +223,9 @@ from journeys);
 2. What's the most common first word of a station name?
 3. Get all journeys where the end station is a station which I've ended at at least 30 times.
 
-**Still to cover:**
+**Answers for all exercises are available [here](6_answers.md).**
+
+**Even more advanced SQL:**
 * Window functions
 * DDL - creating tables, inserting data etc.
 * Using SQL with Python

@@ -17,21 +17,6 @@ git config --global --unset http.proxy
 
 If you have Python 3 and Jupyter installed on your computer, simply run `jupyter notebook` within the project directory.
 
-Otherwise, you can use Docker:
-```bash
-docker run -p 8888:8888 -v $(pwd):/home imrankhan17/jupyter-base
-```
-
-You will need to configure the proxy to allow you to pull images over the corporate network:
-* Docker whale icon
-* Preferences
-* Proxies
-* Manual proxy configuration
-* Enter `http://vfukukproxy.internal.vodafone.com:8080` under HTTP and HTTPS
-* Apply & Restart
-
-Install Docker from [here](https://download.docker.com/mac/stable/Docker.dmg).
-
 ### Things we will cover
 
 * Python
