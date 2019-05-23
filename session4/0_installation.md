@@ -10,7 +10,7 @@ You will need to install `Git BASH` from [here](https://gitforwindows.org/).  Cl
 
 ### Downloading the repo (all users)
 
-Go to [here](../README.md) and click on the green `Clone or download` button on the right.  Select `Download ZIP`.  Unzip the folder and move it to an accessible location.
+Go to [here](https://github.com/imrankhan17/apprentices-training) and click on the green `Clone or download` button on the right.  Select `Download ZIP`.  Unzip the folder and move it to an accessible location.
 
 Optionally, you can follow the instructions [here](../README.md#getting-started) if you are comfortable with Git.
 
