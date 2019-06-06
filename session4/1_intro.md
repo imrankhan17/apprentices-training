@@ -138,8 +138,6 @@ touch new_file.txt
 ls -l
 
 cat new_file.txt
-
-wc new_file.txt
 ```
 
 We can print text to the console using the `echo` command.
