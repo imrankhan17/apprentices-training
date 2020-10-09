@@ -34,7 +34,7 @@ from journeys;
 ```sql
 select *
 from journeys
-order by  balance desc;
+order by balance desc;
 ```
 
 2. How many times have I travelled from Earls Court to Temple?  What was the average fare?
@@ -47,9 +47,8 @@ and end_station = 'Temple';
 
 3. How many unique journeys have I taken?
 ```sql
-select start_station, end_station, count(*)
-from journeys
-group by start_station, end_station;
+select distinct start_station, end_station
+from journeys;
 ```
 
 4. What can you say about the journeys where the end station is missing?  What about when balance is missing?

@@ -1,2 +1,11 @@
+# PyCharm
+.idea/
+
 # Jupyter
 .ipynb_checkpoints/
+
+# data
+*.db
+
+# Mac
+.DS_Store

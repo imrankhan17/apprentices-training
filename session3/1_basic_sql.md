@@ -33,7 +33,7 @@ select * from stations;
 
 In the DataGrip IDE, you can execute a particular query by highlighting it or placing your cursor on it.
 
-We can view certain columns by stating those explicity after the `select` (separated by commas), instead of using `*`:
+We can view certain columns by stating those explicitly after the `select` (separated by commas), instead of using `*`:
 ```sql
 select start_station from journeys;
 ```
@@ -153,7 +153,7 @@ order by charge desc;
 
 We can find unique values of columns using the `distinct` keyword:
 ```sql
-select distinct(start_station)
+select distinct start_station
 from journeys;
 ```
 
