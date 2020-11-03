@@ -110,7 +110,7 @@ select *
 from journeys as j
 join stations as s
 on j.start_station = s.station
-where zone = 1;
+where zone = '1';
 
 select zone, count(*)
 from journeys as j
